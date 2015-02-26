@@ -1,0 +1,32 @@
+// Este codigo ha sido generado por el modulo psexport 20140901-w32 de PSeInt
+// dado que dicho modulo se encuentra aun en desarrollo y en etapa experimental
+// puede que el codigo generado no sea completamente correcto. Si encuentra
+// errores por favor reportelos en el foro (http://pseint.sourceforge.net).
+#include"stdafx.h"
+#include<iostream>
+#include"conio.h"
+using namespace std;
+
+
+int main() {
+	float a;
+	float b;
+	float c;
+	float d;
+	float e;
+	float f;
+	cout << "Ingrese el primer numero:" << endl;
+	cin >> a;
+	cout << "Ingrese el segundo numero:" << endl;
+	cin >> b;
+	c = a+b;
+	d = a-b;
+	e = a*b;
+	f = a/b;
+	cout << "La suma es: " << c << endl;
+	cout << "La resta es: " << d << endl;
+	cout << "La multiplicacion es: " << e << endl;
+	cout << "La divicion es: " << f << endl;
+	return 0;
+}
+

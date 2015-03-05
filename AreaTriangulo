@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include<iostream>
+#include<cmath>
+#include "conio.h"
+using namespace std;
+
+// En C++ no se puede dimensionar un arreglo estático con una dimensión no constante.
+// PSeInt sobredimensionará el arreglo utilizando un valor simbólico ARREGLO_MAX.
+// Sería posible crear un arreglo dinámicamente con los operadores new y delete, pero
+// este mecanismo aún no está soportado en las traducciones automáticas de PSeInt.
+
+
+// Para leer variables de texto se utiliza el operador << del objeto cin, que
+// lee solo una palabra. Para leer una linea completa (es decir, incluyendo los
+// espacios en blanco) se debe utilzar getline (ej, reemplazar cin>>x por
+// getline(cin,x)), pero obliga a agregar un cin.ignore() si antes del getline
+// se leyó otra variable con >>.
+
+int main() {
+	
+	float a;
+	float area;
+	float b;
+	float c;
+	float p;
+	float raiz;
+	cout << "ingresar lado a" << endl;
+	cin >> a;
+	cout << "ingresar lado b" << endl;
+	cin >> b;
+	cout << "ingresar lado c" << endl;
+	cin >> c;
+	p = (a+b+c)/2;
+	area = sqrtf(p*(p-a)*(p-b)*(p-c));
+	cout << "el area del triangulo es:" << area << endl;
+	getch();
+	return 0;
+	
+
+}

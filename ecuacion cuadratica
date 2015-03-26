@@ -1,0 +1,37 @@
+	float a;
+	float b;
+	float c;
+	float c};
+	float d;
+	float d};
+	float rc{;
+	float rc{b;
+	float x;
+	float x1;
+	float x2;
+	float xi;
+	float xr;
+	cout << "intrudcir datos: " << endl;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	d = b*b-4*a*c;
+	if ((d==0)) {
+		x = -b/2*a;
+		cout << "solucion unica: " << x << endl;
+	} else {
+		if ((d<0)) {
+			x1 = (-b+sqrtf(b*b-4*b*c))/2*a;
+			x2 = (-b-sqrtf(b*b-4*b*c))/2*a;
+			cout << "soluciones reales: " << endl;
+			cout << "X1: " << x1 << endl;
+			cout << "X2: " << x2 << endl;
+		} else {
+			xr = -b/2*a;
+			xi = (sqrtf(-d))/2*a;
+			cout << "soluciones imaginarias:" << endl;
+		}
+	}
+	return 0;
+}
+

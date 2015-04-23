@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+void main()
+{
+	float x,n;
+	int i,s,signo;
+	cout<<"ingrese el numero de datos";
+	cin>> n;
+	cout<< "ingrese numero";
+	cin>> x;
+	for(i=1;n;i++){
+		s=s+signo*pow(x,i);
+		signo=signo*(-1);
+	}
+	cout<<"la sumatoria es:";
+	cout<< s;
+	getch();
+}

@@ -1,0 +1,43 @@
+
+#include "stdafx.h"
+#include<iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+float x,x1,x2,e,d;
+
+void ec_cuadratica(float a, float b, float c);
+void main()
+{
+	float a,b,c;
+	cout<< "ingrese a";
+	cin>> a;
+	cout<< "ingrese b";
+	cin>> b;
+	cout<< "ingrese c";
+	cin>> c;
+	sistema(a,b,c);
+	cout<< "el resultado de x es: "; 
+	cout<< x;
+	cout<< "el resultado de x1 es: "; 
+	cout<< x1;
+	cout<< "el resultado de x2 es: "; 
+	cout<< x2;
+	e=0.5;
+	getch();
+}
+void sistema(float a, float b, float c, float d, float e, float f)
+{
+	d=(-b+(b*b-4*a*c));
+	if(d>0)
+		{x1=(-b+pow(d,e))/(2*a);
+		x2=(-b-pow(d,e))/(2*a);
+	}
+	else if(d==0)
+		x=-b/(2*a);
+	else if(d<0)
+		x= IMAGINARIO;
+}
+

@@ -1,0 +1,71 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+void main()
+{
+	int r,opcion,op1,op2,op3;
+	do{
+		cout<<endl;
+		cout<< "1.- areas"<<endl;
+		cout<< "2.- inecuaciones"<<endl;
+		cout<< "3.- angulos"<<endl;
+		cout<< "0.- salir"<<endl;
+		cout<< "elija una opcion: ";
+		cin>> opcion;
+
+		switch(opcion) 
+		{
+		 case 1: do{
+			 cout<< "1.- cuadrado"<<endl;
+			 cout<< "2.- triangulo"<<endl;
+			 cout<< "3.- circulo"<<endl;
+			 cout<< "0.- salir"<<endl;
+			 cout<< "elija opcion: ";
+			 cin>> op1;
+			 switch(op1){
+			    case 1: r="base*altura";break;
+				case 2: r="(base*altura)/2";break;
+				case 3: r="pi*radio²";break;
+				case 0: "salir";break;
+				default: cout<< "opcion invalida"<<endl;}
+			 }
+		     case 2: do{
+			 cout<< "1.- |a|<=b "<<endl;
+			 cout<< "2.- |a|>b"<<endl;
+			 cout<< "3.- |a|>=|b|"<<endl;
+			 cout<< "0.- salir"<<endl:
+			 cout<< "elija opcion: ";
+			 cin>> op2;
+			 switch(op2){
+				case 1: r="b>=a"<<endl<<"-b<=a<=b",;break;
+				case 2: r="a>=b v a<=-b";break;
+				case 3: r="a²>=b²";break;
+				case 0: "salir";break;
+				default: cout<< "opcion invalida"<<endl;}
+			 }
+			 case 3: do{
+			 cout<< "1.- ley de senos "<<endl;
+			 cout<< "2.- ley de cosenos"<<endl;
+			 cout<< "0.- salir"<<endl:
+			 cout<< "elija opcion: ";
+			 cin>> op2;
+			 switch(op2){
+				case 1: r="(a/senA)=(b/senB)=(c/senC)",;break;
+				case 2: r="a²=b²+c²-2*b*c*cosa";break;
+				case 0: "salir";break;
+				default: cout<< "opcion invalida"<<endl;}
+			 }
+			 case 0: cout<< "opcion invalida"<<endl;
+		}
+		cout<<r<<endl;
+	} while (opcion !=o);
+		getch();
+}
+
+				 
+					
+
+

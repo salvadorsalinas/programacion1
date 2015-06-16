@@ -1,4 +1,3 @@
-
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -26,42 +25,41 @@ void main()
 			 cout<< "elija opcion: ";
 			 cin>> op1;
 			 switch(op1){
-			    case 1: r="base*altura";break;
-				case 2: r="(base*altura)/2";break;
-				case 3: r="pi*radio²";break;
+			    case 1: "base*altura";break;
+				case 2: "(base*altura)/2";break;
+				case 3: "pi*radio²";break;
 				case 0: "salir";break;
 				default: cout<< "opcion invalida"<<endl;}
-			 }
+				 }
 		     case 2: do{
 			 cout<< "1.- |a|<=b "<<endl;
 			 cout<< "2.- |a|>b"<<endl;
 			 cout<< "3.- |a|>=|b|"<<endl;
-			 cout<< "0.- salir"<<endl:
+			 cout<< "0.- salir"<<endl;
 			 cout<< "elija opcion: ";
 			 cin>> op2;
 			 switch(op2){
-				case 1: r="b>=a"<<endl<<"-b<=a<=b",;break;
-				case 2: r="a>=b v a<=-b";break;
-				case 3: r="a²>=b²";break;
+				case 1: "b>=a||-b<=a<=b";break;
+				case 2: "a>=b v a<=-b";break;
+				case 3: "a²>=b²";break;
 				case 0: "salir";break;
 				default: cout<< "opcion invalida"<<endl;}
 			 }
 			 case 3: do{
 			 cout<< "1.- ley de senos "<<endl;
 			 cout<< "2.- ley de cosenos"<<endl;
-			 cout<< "0.- salir"<<endl:
+			 cout<< "0.- salir"<<endl;
 			 cout<< "elija opcion: ";
 			 cin>> op2;
 			 switch(op2){
-				case 1: r="(a/senA)=(b/senB)=(c/senC)",;break;
-				case 2: r="a²=b²+c²-2*b*c*cosa";break;
+				case 1: "(a/senA)=(b/senB)=(c/senC)";break;
+				case 2: "a²=b²+c²-2*b*c*cosa";break;
 				case 0: "salir";break;
 				default: cout<< "opcion invalida"<<endl;}
 			 }
-			 case 0: cout<< "opcion invalida"<<endl;
+		case 0: cout<< "opcion invalida"<<endl;
 		}
-		cout<<r<<endl;
-	} while (opcion !=o);
+	} while(opcion !=0);
 		getch();
 }
 
